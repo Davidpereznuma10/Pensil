@@ -1,0 +1,59 @@
+body{
+  background-image: url("./img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center center;;
+  display: grid;
+  justify-content: center;
+  
+}
+#loader {
+  background-color: rgba(0, 0, 0, 0.5);
+  position:fixed;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+#video{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+} 
+
+#myForm{
+  display: grid;
+  text-align: center;
+  background-color: rgba(250, 242, 242, 0.493);
+  min-width: 756px ;
+  border: 1px black solid;;
+
+}
+#lapiz-cont{
+  display: grid;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+#imagen {
+  width: 18cm;
+  transition: width 0.3s ease-in-out;
+  max-height: 160px;
+}
+#lapiz{
+  display: grid;
+  justify-content: center;
+}
+#containers{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+span.container{
+  border:black 2px double;
+  ;
+}
+table{
+  top: 20px;;
+}

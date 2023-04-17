@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lapiz</title>
+    <script src="main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div id="loader">
+        <video id="video"  autoplay>video introduccion</video>
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Class Pensil</a>
+            </div>
+          </nav>
+    </header>
+    <form id="myForm">
+        <fieldset>
+                <label>Color</label>
+                <div id="containers">
+                    <input id="color" type="color" name="color" style="min-width: 500px;"><br>
+                </div>
+    <hr><hr>
+                <label>Dimension</label>
+            <div id="lapiz-cont">
+                <input type="range" id="range" name="range" min="10" max="25" value="18"> 
+                <div id="lapiz">
+                    <span id="valor"></span>
+                    <img src="./style/img/lapiz.jpg" id="imagen" alt="Imagen">
+                </div>
+            </div>
+    <hr><hr>
+                    <label>Marca</label>
+                    <div id="containers" class="mb-3; container">
+                        <input type="radio" name="marca" value="Norma"  ><label>Norma</label><br>
+                        <input type="radio" name="marca" value="Mongo"><label>Mongol</label><br>
+                        <input type="radio" name="marca" value="Fabel Castle"><label>Fabel Castle</label><br>
+                        <input type="radio" name="marca" value="Big"><label>Big</label><br>
+                    </div>
+    <hr><hr>
+                    <label>Borrador</label>
+                    <div id="containers" class="mb-3; container">
+                        <input type="radio" name="borrador" value="true"><label>Tiene</label><br>
+                        <input type="radio" name="borrador" value="false"><label>No tiene</label><br>
+                    </div>
+    <hr><hr>
+
+                    <label>Material</label>
+                    <div id="containers" class="mb-3; container" >
+                        <input type="radio" name="material" value="Madera"><label>Madera</label><br>
+                        <input type="radio" name="material" value="Goma"><label>Goma</label>   
+                    </div>
+    <hr>
+        </fieldset>
+        <input type="submit" value="Enviar" class="btn btn-dark">
+    </form>
+    <br><br><br><br><hr>
+    <table class="table table-dark table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Color</th>
+                <th scope="col">Dimension</th>
+                <th scope="col">Marca</th>
+                <th scope="col">Borrador</th>
+                <th scope="col">Material</th>
+            </tr>
+        </thead>
+        <tbody id="table">
+    </table>
+</body>
+</html>
