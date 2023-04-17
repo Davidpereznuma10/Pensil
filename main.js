@@ -48,6 +48,7 @@ window.addEventListener("DOMContentLoaded",() => {
 });
 const lectura = myForm.addEventListener('submit',(e)=>{
     e.preventDefault();
+    localStorage.getItem('Table').localStorage.setItem('Table',table)
     const selectedMarca = document.querySelector('input[name="marca"]:checked');
     const formData = new FormData(myForm);
     const formDataObj = Object.fromEntries(formData.entries());
@@ -61,5 +62,5 @@ const lectura = myForm.addEventListener('submit',(e)=>{
             <th>${miLapiz.borrador}</th>
             <th>${miLapiz.material}</th>
     </tr>`);
-    console.table(miLapiz);
+
 });
