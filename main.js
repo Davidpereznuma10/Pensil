@@ -48,7 +48,6 @@ window.addEventListener("DOMContentLoaded",() => {
 });
 const lectura = myForm.addEventListener('submit',(e)=>{
     e.preventDefault();
-    localStorage.getItem('Table').localStorage.setItem('Table',table)
     const selectedMarca = document.querySelector('input[name="marca"]:checked');
     const formData = new FormData(myForm);
     const formDataObj = Object.fromEntries(formData.entries());
